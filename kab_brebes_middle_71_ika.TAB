@@ -1,0 +1,28 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 4
+    id Float ;
+    class Char (90) ;
+    name Char (90) ;
+    AGL Float ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "d9d946ed-17aa-4a5a-9123-ba2bbd64aa9c"
+"\SNAPTHIN" = ""
+"\SNAPTHIN\EnableSnap" = "FALSE"
+"\SNAPTHIN\Node" = "0"
+"\SNAPTHIN\Vec" = "0"
+"\SNAPTHIN\TolUnit" = "1"
+"\SNAPTHIN\EnableThin" = "FALSE"
+"\SNAPTHIN\Bend" = "0"
+"\SNAPTHIN\Dist" = "0"
+"\SNAPTHIN\ThinUnit" = "1"
+"\SNAPTHIN\EnableArea" = "FALSE"
+"\SNAPTHIN\Area" = "0"
+"\SNAPTHIN\AreaUnit" = "15"
+end_metadata

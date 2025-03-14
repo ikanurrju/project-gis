@@ -1,0 +1,40 @@
+!Workspace
+!Version  950
+!Charset WindowsLatin1
+Open Table "C:\Users\MyBook Hype AMD\Documents\JALAN\V_Konawe_Selatan_2\batas_2" As batas_2 Interactive
+Open Table "C:\Users\MyBook Hype AMD\Documents\JALAN\V_Konawe_Selatan_2\main_road_ks" As main_road_ks Interactive
+Open Table "C:\Users\MYBOOK~1\AppData\Local\Temp\GEL4DCB" As GEL4DCB Interactive
+Open Table "C:\Users\MyBook Hype AMD\Documents\JALAN\V_Konawe_Selatan_2\V_Konawe_Selatan_2" As V_Konawe_Selatan_2 Interactive
+Map From main_road_ks,batas_2
+  Position (0.0416667,0.0416667) Units "in"
+  Width 5.74167 Units "in" Height 3.46667 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Snap Mode On Enhanced On Smooth Text Antialias Image High
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (122.6547512,-4.028348749)
+  Zoom 97966.66467 Units "m"
+  Preserve Zoom Display Zoom
+  Distance Units "m" Area Units "sq m" XY Units "degree"
+Set Map
+  Layer 1
+    Display Off
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Arial",0,9,0)
+    Label Line Arrow Position Above Font ("Arial",0,9,0) Pen (1,2,0) 
+      With NAME
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 2
+    Display Off
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Arial",0,9,0)
+    Selectable Off
+    Label Line None Position Center Font ("Arial",0,9,0) Pen (1,2,0) 
+      With PROV
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+Set Window FrontWindow() Printer
+ Name "Nitro PDF Creator" Orientation Portrait Copies 1
+ Papersize 1
+Dim WorkspaceMaximizedWindow As Integer
+WorkspaceMaximizedWindow = Frontwindow()
+Set Window WorkspaceMaximizedWindow Max
+Undim WorkspaceMaximizedWindow
